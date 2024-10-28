@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ivy Onyi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="HairSalon is a so and so...">
+    <title>HairSalon --APPOINTMENT</title>
+    <script src="./all.min.js"></script>
+    <script defer src="./salon.js"></script>
+    <link rel="stylesheet" href="./salon.css">  
+    <link rel="stylesheet" href="./all.min.css">
+</head>
+<body id="site-body">
+    <header class="header">
+        <a href="./" class="header__logo">
+            <img class="header__logo__img" src="./images/manicure-svg.svg" alt="Unavailable">
+            <h1 class="header__sitename">Nail<span>Nest</span></h1>
+        </a> 
+        <nav class="header__nav">
+            <ul class="header__navwrap">
+                <li><a href="./" class="header__navlink">Home</a></li>
+                <li><a href="./services.html" class="header__navlink" >Services</a></li>
+                <li><a href="./policy.html" class="header__navlink">Policies</a></li>
+                <li><a href="./contact.html" class="header__navlink">Contact Us</a></li>
+                <li><a href="./gallery.html" class="header__navlink">Gallery</a></li>
+                <li><a href="./appointment.html" class="navlink2">Book Appointment</a></li>
+            </ul>
+        </nav>
+        <a href="./appointment.html" class="navlink2">Book Appointment</a>
+        <div class="header__toggle"><i class="fa fa-bars"></i></div>
+    </header>
+    <section class="background">
+        <h2 class="background__heading">Book an Appointment</h2>
+        <p class="background__text">Reserve a time that fits into your schedule</p>
+        <a href="./appointment.html#site-body" class="back2Top"><i class="fa fa-chevron-up"></i></a>
+    </section>
+    <section class="appointment__section">
+        <img src="./images/nailShop.webp" alt="">
+        <form action="" id="appointment__form">
+            <h3 class="app__head">Appointment details</h3>
+            <label for="fullname">Full Name</label>
+            <input id="firstname" placeholder="Enter your full name" type="text" required>
+            <!-- <label for="lastname">Last Name</label>
+            <input id="lastname" type="text"> -->
+            <label for="email">Email Address</label>
+            <input type="email" name="" placeholder="Enter you email address" id="email" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="" id="phone" placeholder="Eg. 08012345678" required>
+            <label for="date">Appointment Date</label>
+            <input type="date" id="date" name="appointment-date" required>
+            <label for="time">Appointment Time</label>
+            <input type="time" step="1800" name="appointment-time" id="time" required>
+            <label for="subject">Comment</label>
+            <input maxlength="300" type="text">
+            <button type="submit" class="appointment__btn">Confirm Appointment</button>
+        </form>
+    </section>
+    <section class="quicklinks">
+        <div class="quick-links">
+            <a href="./" class="quicklink"><i class="fa fa-chevron-right"></i>Home</a>
+            <a href="./appointment.html" class="quicklink"><i class="fa fa-chevron-right"></i>Appointment</a>
+            <a href="./services.html" class="quicklink"><i class="fa fa-chevron-right"></i>Services</a>
+            <a href="./policy.html" class="quicklink"><i class="fa fa-chevron-right"></i>Policies</a>
+            <a href="./contact.html" class="quicklink"><i class="fa fa-chevron-right"></i>Contact</a>
+            <a href="./gallery.html" class="quicklink"><i class="fa fa-chevron-right"></i>Gallery</a>
+        </div>
+        <hr>
+    </section>
+    <footer class="footer">
+        <p class="footer__rights"><span>&copy;</span>2024.Nail Nest Nigeria. All rights reserved</p>
+        <div class="footer__icons">
+            <div class="ig">
+                <a href="./" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="fb">
+                <a href="./" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+            <div class="twitter">
+                <a href="./" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
