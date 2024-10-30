@@ -202,14 +202,8 @@ timeInput.addEventListener('change', () => {
         (dayOfWeek !== 0 && dayOfWeek !== 6 && (hours < 10 || hours >= 19)) // Weekdays
     );
 
-    // Check if time is not on a 30-minute interval
-    const isNot30MinInterval = (minutes !== 0 && minutes !== 30);
-
     if (isInvalidTime) {
         alert("Please select a valid time for the chosen day.");
-        timeInput.value = ''; // Clear invalid time input
-    } else if (isNot30MinInterval) {
-        alert("Please select a time on the 30-minute interval (e.g., 12:00, 12:30).");
         timeInput.value = ''; // Clear invalid time input
     }
 });
